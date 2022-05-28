@@ -1,0 +1,21 @@
+// how to restore and dump database 
+open cmd
+    1 run mongo 
+        - to check if mongo is successfully installed
+        - be sure that the path was configuresd in environment variables 
+    2 run show dbs 
+        - to check the databases 
+        - run use <name of database> to switched to a particular database
+    3 <optional> how to delete database
+        - run db.<name of data base>
+
+open cmd in administration
+    1. got to mongo path particularly in bin folder , copy address
+    2. from cmd line type cd C:\Program Files\MongoDB\Server\4.2\bin
+    3. run mongodump
+        - this will create the dump folder
+    4. if you have a database folder (itax_development) paste that file under the dump folder 
+        - run mongorestore
+    5. open a cmd and run mongo, then run show dbs to check the newest database. Check if your database folder was created
+
+Resource = https://www.youtube.com/watch?v=CHNB38MAvKY
