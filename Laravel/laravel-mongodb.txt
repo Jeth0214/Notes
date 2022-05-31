@@ -1,0 +1,10 @@
+// ----- install jenssegers/ mongodb into laravel project ---///
+ composer require jenssegers/mongodb
+
+if encountered this error..
+ Root composer.json requires jenssegers/mongodb ^3.9 -> satisfiable by jenssegers/mongodb[v3.9.0].
+    - jenssegers/mongodb v3.9.0 requires illuminate/support ^9.0 -> found illuminate/support[v9.0.0-beta.1, ..., 9.x-dev] but these were 
+not loaded, likely because it conflicts with another require.
+
+it means your laravel project does not compatible with you composer/laravel project. add the specific version and --ignore-platform-reqs flag
+ - composer require jenssegers/mongodb:3.8 --ignore-platform-reqs

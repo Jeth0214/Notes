@@ -1,0 +1,7 @@
+// if mongoDB compass connect has error
+    - connect ECONNREFUSED 127.0.0.1:27017
+    maybe the service has stopped.
+solution: 
+1. cllick window + Resource
+2. type or click service.msc
+3. look for mongoDb server , right click and click start
