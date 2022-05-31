@@ -1,0 +1,4 @@
+// generate key 
+by running command php artisan serve
+php artisan key:generate
+
