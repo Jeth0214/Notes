@@ -1,0 +1,27 @@
+// Deploy angular app to github
+
+REfer to this link on angular.io documentation 
+https://angular.io/guide/deployment#deploy-to-github-pages
+
+ng build --output-path docs --base-href /your_project_name/
+ex. ng build --output-path docs --base-href "https://jeth0214.github.io/Search-Countries-App/"
+
+// Error handling 
+scenario 1: error: Invalid version: "15.2-15.3"
+
+Possible Answer: Run 
+npm audit fix --force
+npm audit fix
+npm update
+
+scenario 2: This version of CLI is only compatible with Angular versions ^13.0.0, but Angular version 12.2.13 was found instead
+Possible answer:
+Try to change "@angular-devkit/build-angular": "< your version here >" in package.json file.
+Close the editor and try again.
+
+npm i @angular-devkit/build-angular@12.2.13 --force
+npm i @angular/cli@12
+
+Note: 
+Wait for the newest deployment to be active. Try to refresh your github page if it is in pending or processing status
+Also, refresh the deployment page or the given url.
