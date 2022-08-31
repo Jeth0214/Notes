@@ -1,0 +1,9 @@
+// ---- install specific version of laravel in creating new project----///
+composer create-project --prefer-dist laravel/laravel Projectname "6.*"
+source: https://stackoverflow.com/questions/23754260/installing-specific-laravel-version-with-composer-create-project
+
+if you encounter this error
+Could not find package laravel/laravel with version 8.1.* in a version installable using your PHP version, PHP extensions and Composer version.
+add --ignore-platform-reqs flag like this...
+composer create-project --prefer-dist laravel/laravel Projectname 8.* --ignore-platform-reqs
+source: https://stackoverflow.com/questions/29318709/how-can-i-resolve-your-requirements-could-not-be-resolved-to-an-installable-set
