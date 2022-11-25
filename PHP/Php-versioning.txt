@@ -1,0 +1,4 @@
+Steps on how to use specific PHP version on XAMPP:
+
+1. open xampp folder. Rename apache (ex: apache_old) and php (ex: php_old) folder.
+2. Go to https://sourceforge.net/projects/xampp/files/ and download the PHP zip version of your choice.
